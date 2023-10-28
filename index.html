@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Grid</title>
+    <link rel="stylesheet" href="./my-grid.css">
+
+    <style>
+        /* RESET CSS */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* ============= */
+        .sidebar {
+            background-color: burlywood;
+        }
+
+        .content {
+            background-color: yellowgreen;
+        }
+
+        .footer {
+            background-color: grey;
+            height: 100px;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            background-color: rebeccapurple;
+        }
+
+        .logo {
+            background-color: chocolate;
+        }
+
+        .nav {
+            background-color: bisque;
+        }
+
+        .search {
+            background-color: navy;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main grid wide">
+        <div class="header row">
+            <div class="logo col l-2 m-0 s-0">logo</div>
+            <div class="nav col l-6 m-8 s-12">nav</div>
+            <div class="search col l-4 m-4 s-0">search</div>
+        </div>
+        <div class="body row">
+            <div class="sidebar col l-3 s-0">
+                <div class="grid row">
+                    <div class="col l-12">option1</div>
+                    <div class="col l-12">option2</div>
+                    <div class="col l-12">option3</div>
+                    <div class="col l-12">option4</div>
+                    <div class="col l-12">option5</div>
+                    <div class="col l-12">option6</div>
+                    <div class="col l-12">option7</div>
+                    <div class="col l-12">option8</div>
+                    <div class="col l-12">option9</div>
+                    <div class="col l-12">option10</div>
+                </div>
+            </div>
+            <div class="content col l-9 s-12">
+                <div class="grid row">
+                    <div class="box col l-4 m-6 s-12">1</div>
+                    <div class="box col l-4 m-6 s-12">2</div>
+                    <div class="box col l-4 m-6 s-12">3</div>
+                    <div class="box col l-4 m-6 s-12">4</div>
+                    <div class="box col l-4 m-6 s-12">5</div>
+                    <div class="box col l-4 m-6 s-12">6</div>
+                    <div class="box col l-4 m-6 s-12">7</div>
+                    <div class="box col l-4 m-6 s-12">8</div>
+                    <div class="box col l-4 m-6 s-12">9</div>
+                    <div class="box col l-4 m-6 s-12">10</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="footer col l-4 l-o-4 m-o-8 s-o-8">footer1</div>
+            <div class="footer col l-4">footer1</div>
+
+        </div>
+    </div>
+</body>
+</html>
